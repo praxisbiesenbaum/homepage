@@ -3,30 +3,13 @@ layout: default
 ---
 
 <!-- Start Hero -->
-<div class="hero" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover; background-color:rgba(255, 255, 255, 0.8); ">
+<div class="hero" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover; background-color:rgba(255, 255, 255, 0.8); height: 300px;">
     <div class="hero-content">
         <div class="container-fluid">
-            <div class="hero-content-inner">
+            <div id="hero-text" class="hero-content-inner" style="height: 300px;">
                 <h1>{{ site.hero.hero_title }}</h1>
                 <p>{{ site.hero.hero_description }}</p>
             </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 ">
-            {% if site.infobox.titel1 %}
-                <h3>{% if site.infobox.icon1 %}<svg class="icon icon-{{ site.infobox.icon1 }}"><use xlink:href="#icon-{{ site.infobox.icon1 }}"></use></svg>{% endif %}{{ site.infobox.titel1 }}</h3>
-                <p>{{ site.infobox.text1 }}</p>
-            {% endif %}
-            {% if site.infobox.titel2 %}
-                <h3>{% if site.infobox.icon2 %}<svg class="icon icon-{{ site.infobox.icon2 }}"><use xlink:href="#icon-{{ site.infobox.icon2 }}"></use></svg>{% endif %}{{ site.infobox.titel2 }}</h3>
-                <p>{{ site.infobox.text2 }}</p>
-            {% endif %}
-            {% if site.infobox.titel3 %}
-                <h3>{% if site.infobox.icon3 %}<svg class="icon icon-{{ site.infobox.icon3 }}"><use xlink:href="#icon-{{ site.infobox.icon3 }}"></use></svg>{% endif %}{{ site.infobox.titel3 }}</h3>
-                <p>{{ site.infobox.text3 }}</p>
-            {% endif %}
         </div>
     </div>
 </div>
@@ -37,58 +20,31 @@ layout: default
     <div class="col-sm-4">
         <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
         <h3>Kontakt</h3>
-        <table>
-            <tbody>
-                {% if site.contact.phone %}
-                <tr>
-                    <td><strong>Telefon:</strong> <a href="tel:{{ site.contact.phone }}">{{ site.contact.phone }}</a></td>
-                </tr>
-                {% endif %}
-                {% if site.contact.fax %}
-                <tr>
-                    <td><strong>Fax:</strong> {{ site.contact.phone }}</td>
-                </tr>
-                {% endif %}                
-                {% if site.contact.emergency %}
-                <tr>
-                    <td><strong>Ärztlicher Notdienst:</strong> <a href="tel:{{ site.contact.emergency }}">{{ site.contact.emergency }}</a></td>
-                </tr>
-                {% endif %}
-                {% if site.contact.email %}
-                <tr>
-                    <td><strong>E-Mail:</strong> <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></td>
-                </tr>
-                {% endif %}
-            </tbody>
-        </table>
+        <ul>
+            {% if site.contact.phone %}
+                <li><strong>Telefon:</strong> <a href="tel:{{ site.contact.phone }}">{{ site.contact.phone }}</a></li>
+            {% endif %}
+            {% if site.contact.fax %}
+                <li><strong>Fax:</strong> {{ site.contact.phone }}</li>
+            {% endif %}                
+            {% if site.contact.emergency %}
+                <li><strong>Ärztlicher Notdienst:</strong> <a href="tel:{{ site.contact.emergency }}">{{ site.contact.emergency }}</a></li>
+            {% endif %}
+            {% if site.contact.email %}
+                <li><strong>E-Mail:</strong> <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
+            {% endif %}
+        </ul>
     </div>
     <div class="col-sm-4">
         <svg class="icon icon-clock-o"><use xlink:href="#icon-clock-o"></use></svg>
         <h3>Sprechzeiten</h3>
-        <table>
-            <tbody>
-                <tr>
-                    <td>Montag:</td>
-                    <td>{{ site.monday }}</td>
-                </tr>
-                <tr>
-                    <td>Dienstag:</td>
-                    <td>{{ site.tuesday }}</td>
-                </tr>
-                <tr>
-                    <td>Mittwoch:</td>
-                    <td>{{ site.wednesday }}</td>
-                </tr>
-                <tr>
-                    <td>Donnerstag:</td>
-                    <td>{{ site.thursday }}</td>
-                </tr>
-                <tr>
-                    <td>Freitag:</td>
-                    <td>{{ site.friday }}</td>
-                </tr>
-            </tbody>
-        </table>
+        <ul>
+            <li><strong>Montag:</strong> {{ site.monday }}</li>
+            <li><strong>Dienstag:</strong> {{ site.tuesday }}</li>
+            <li><strong>Mittwoch:</strong> {{ site.wednesday }}</li>
+            <li><strong>Donnerstag:</strong> {{ site.thursday }}</li>
+            <li><strong>Freitag:</strong> {{ site.friday }}</li>
+        </ul>
     </div>
     <div class="col-sm-4">
         <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
@@ -178,7 +134,7 @@ layout: default
 <!-- End About -->
 
 <!-- Start Treatments -->
-<div id="treatments" class="treatments">
+<div id="leistungen" class="treatments">
     <div class="container-fluid">
         <h2 class="section-title">Leistungen</h2>
 
@@ -219,7 +175,7 @@ layout: default
 </div>
 <!-- End Our team -->
 
-<!-- Start Testimonials -->
+<!-- Start Testimonials
 <div id="testimonials" class="testimonials parallax" style="background-image: url('{{ site.baseurl }}/img/{{ site.testimonials.testimonials_img }}');">
     <div class="overlay-container">
         <div class="overlay"></div>
@@ -241,10 +197,10 @@ layout: default
         </div>
     </div>
 </div>
-<!-- End Testimonials -->
+End Testimonials -->
 
 <!-- Start Gallery -->
-<div id="gallery" class="gallery">
+<div id="praxis" class="gallery">
         
     <h2 class="section-title">Unsere Praxis</h2>
 
@@ -262,11 +218,35 @@ layout: default
 </div>
 <!-- End Gallery -->
 
-<!-- Start Map -->
-<!--
-    <div id="location" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}" data-address-details="<img src='{{ site.map.address_details }}'>"></div>
--->
-<div id="location">
+<!-- Start Anfahrt -->
+<div id="anfahrt">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2445.5038785760385!2d8.757190415944217!3d52.19789016780254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ba12a50c02b471%3A0x7ca9e8e3382e9dff!2sGemeinschaftspraxis%20Dr.%20Jens%20Biesenbaum%20und%20Dr.%20Uwe%20Gerbaulet!5e0!3m2!1sen!2sde!4v1585835099506!5m2!1sen!2sde" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+<!-- End Map -->
+
+<!-- Start Rechtliches -->
+
+<!-- Start 3 columns -->
+<div class="three-shade-col" id="rechtliches">
+    <div class="col-sm-4">
+    <h2>Impressum</h2>
+        Dr. Jens Biesenbaum<br>
+        Goethestraße 1-3<br>
+        32584 Löhne<br>
+        Tel.: 05731 81482<br>
+        E-Mail: mail@biesie.de<br>
+    </div>
+    <div class="col-sm-4">
+        <h2>Berufsspezifische Angaben</h2>
+        Die Berufsbezeichnung Arzt wurde in Deutschland verliehen.<br>
+        Zuständige Ärztekammer: Ärztekammer Westfalen-Lippe<br>
+        Zuständige Kassenärztliche Vereinigung: Westfalen-Lippe<br>
+    </div>
+    <div class="col-sm-4">
+        <h2>Berufsrechtliche Regelungen:</h2>
+        Es gelten folgende berufsrechtliche Regelungen:<br>
+        Berufsordnung der Ärztekammer Westfalen-Lippe<br>
+        Heilberufe-Kammergesetz Nordrhein-Westfalen<br>
+    </div>
 </div>
 <!-- End Map -->

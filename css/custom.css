@@ -21,3 +21,18 @@ a {
 table {
     border-collapse: separate;
 }
+
+.hero .container-fluid {
+    position: relative;
+    height: 300px;
+    bottom: 0px;
+}
+
+.hero-content {
+    position: relative;
+}
+
+#hero-text {
+    position: absolute;
+    bottom: 0;
+}
