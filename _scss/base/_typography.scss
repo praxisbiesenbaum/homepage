@@ -56,7 +56,7 @@ p {
 /* Links
 -------------------------------*/
 a {
-    color: $colorPrimary;
+    color: #fff; // $colorPrimary;
     text-decoration: none;
     &:hover, &:focus {
         text-decoration: underline;

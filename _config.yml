@@ -1,51 +1,60 @@
 # Site settings
-title: DentistSmile | Dental Jekyll Theme
-description: "A responsive Jekyll theme for dental clinics."
+title: Hausarzt in Löhne - Praxis Dr. Biesenbaum & Dr. Gerbaulet
+description: "Hausarzt für Allgemeinmedizin in Löhne (OWL). Gemeinschaftspraxis Dr. Jens Biesenbaum und Dr. Uwe Gerbaulet"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the name of your domain
-logo_url: svg/min/logo.svg
+logo_url: svg/logo.svg
 
 # Hero
 hero: 
     hero_img: hero.jpg
-    hero_title: DentistSmile
-    hero_description: A responsive Jekyll theme for dental clinics.
+    hero_title: Dr. med. Jens Biesenbaum<br>Dr. med. Uwe Gerbaulet
+    hero_description: Gemeinschaftspraxis für Allgemeinmedizin in Löhne (Ostwestfalen)
 
-# Contact form
-api_token: # Enter API token here
+# Infobox
+infobox:
+    titel1: Aktuelle Informationen
+    text1: Corona, Abweichende Öffnungszeiten, etc. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus!
+    icon1: bolt
+    titel2: Jetzt geht's ab in den Urlaub
+    text2: Vom 1. bis 31. sind wir leider nicht in der Praxis, sondern im Urlaub. Yippieyayeah!
+    icon2: ambulance
+    titel3: Urlaubsvertretung
+    text3: Dr. Peppa Pig
+    icon3: calendar
+
 
 # Contact info
 contact:
-    phone: 932 50 540
-    emergency: 931 53 234
-    email: contact@yoursite.com
-    address: Von schroeders 273, <br> Viña del mar - Chile
+    phone: 05731 81482
+    fax: 05731 81482
+    emergency: 116117
+    email: contact@hausarzt-loehne.de
+    address: Goethestraße 1-3
+    city: 32584 Löhne
+    google_maps: https://goo.gl/maps/iKjxJctEiZvcNLdVA
 
 # Opening hours
-monday_friday: 9:00 – 18:00
-saturday: 10:00 – 17:00
-sunday: 10:00 – 15:00
+monday: 7:30 - 12:00 | 15:00 - 18:00
+tuesday: 7:30 - 12:00 | 15:00 - 18:00
+wednesday: 7:30 - 13:00
+thursday: 7:30 - 12:00 | 16:00 - 18:00
+friday: 7:30 - 12:00
 
 # Testimonials
 testimonials:
     testimonials_img: parallax.jpg
 
-# Map
-map:
-    zoom: 17
-    address: Von schroeders 273, Viña del mar, Chile
-    address_details: svg/min/logo.svg
-
 # Social settings
-facebook: http://facebook.com
-twitter: http://twitter.com
-instagram: http://instagram.com
-youtube: http://youtube.com
-skype: skype:obaez_design?userinfo
-feed: yes
+# facebook: http://facebook.com
+# twitter: http://twitter.com
+# instagram: http://instagram.com
+# youtube: http://youtube.com
+# skype: skype:obaez_design?userinfo
+# feed: yes
 
 # Footer
-copyright: © 2015 DentistSmile - All rights reserved
+copyright: Impressum | Datenschutz | Cookie-Richtlinie
 
 # Build settings
 markdown: kramdown

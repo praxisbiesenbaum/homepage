@@ -1,30 +1,10 @@
-- name: Britta Perry
-  image: team.jpg
+- name: Dr. med. Jens Biesenbaum
+  image: dr_jens_biesenbaum.jpg
   email: email@gmail.com
   phone: 9659 43 21
 
-- name: Troy Barnes 
-  image: team.jpg
-  email: email@gmail.com
-  phone: 9659 43 21
-
-- name: Annie
-  image: team.jpg
-  email: email@gmail.com
-  phone: 9659 43 21
-
-- name: Jeff Winger
-  image: team.jpg
-  email: email@gmail.com
-  phone: 9659 43 21
-
-- name: Britta Perry
-  image: team.jpg
-  email: email@gmail.com
-  phone: 9659 43 21
-
-- name: Troy Barnes
-  image: team.jpg
+- name: Dr. med. Best
+  image: dr_best.jpg
   email: email@gmail.com
   phone: 9659 43 21
 
