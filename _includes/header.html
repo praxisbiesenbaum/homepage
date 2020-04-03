@@ -16,11 +16,12 @@
         <div class="collapse navbar-collapse scrollspy" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li><a class="scroll" href="#top">Info</a></li>
-                <li><a class="scroll" href="#news">Aktuelles</a></li>
+                {% if site.infobox.titel1 or site.infobox.text1 or site.infobox.titel2 or site.infobox.text2 or site.infobox.titel3 or site.infobox.text3 %}
+                    <li><a class="scroll" href="#news">Aktuelles</a></li>
+                {% endif %}
                 <li><a class="scroll" href="#about">Über Uns</a></li>
                 <li><a class="scroll" href="#leistungen">Leistungen</a></li>
                 <li><a class="scroll" href="#team">Team</a></li>
-                <!-- <li><a class="scroll" href="#testimonials">Testimonials</a></li> -->
                 <li><a class="scroll" href="#praxis">Unsere Praxis</a></li>
                 <li><a class="scroll" href="#anfahrt">Anfahrt</a></li>
                 <li><a class="scroll" href="#rechtliches">Rechtliches</a></li>

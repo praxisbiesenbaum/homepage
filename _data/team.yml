@@ -1,14 +1,48 @@
 - name: Dr. med. Jens Biesenbaum
   image: dr_biesenbaum.jpg
-  email: email@gmail.com
-  phone: 9659 43 21
+  description1: Facharzt für Allgemeinmedizin, Notfallmedizin, Palliativmedizin und Reisemedizin.
+  description2: Seit 2017 in hausärztlicher Gemeinschaftspraxis in Löhne, Ostwestfalen niedergelassen.
+  description3: Vorstandsmitglied und Delegierter im Hausärzteverband Westfalen-Lippe Bezirk Ost.
+  description4:
 
-- name: Dr. med. Best
-  image: dr_best.jpg
-  email: email@gmail.com
-  phone: 9659 43 21
+- name: Dr. med. Uwe Gerbaulet
+  image: dr_gerbaulet.jpg
+  description1: Allgemeinmediziner mit den Zusatzqualifikationen Naturheilkunde und Traditionelle Chinesische Medizin
+  description2: Seit 2005 Teilhaber der Gemeinschaftspraxis.
+  description3:
+  description4:
 
-- name: Annie
-  image: team.jpg
-  email: email@gmail.com
-  phone: 9659 43 21
+- name: Brigitte Mielke
+  image: brigitte_mielke.jpg
+  description1: MFA
+  description2: 
+  description3:
+  description4: 
+
+- name: Monique Flottrong
+  image: Monique_Flottrong.jpg
+  description1: MFA
+  description2: 
+  description3:
+  description4:
+
+- name: Nicole Heldt
+  image:  Nicole_Heldt.jpg
+  description1: MFA
+  description2: 
+  description3:
+  description4:
+
+- name: Güler Isiki
+  image: gueler_isiki.jpg
+  description1: MFA
+  description2: 
+  description3:
+  description4:
+
+- name: Kristin Meding
+  image: kristin_meding.jpg
+  description1: MFA
+  description2: 
+  description3:
+  description4:

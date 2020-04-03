@@ -58,29 +58,38 @@ layout: default
 </div>
 <!-- End 3 columns -->
 
-<!-- Start Aktuelles -->
-<div id="news" class="about">
-    <div class="container-fluid">
-        <h2 class="section-title">Aktuelle Informationen</h2>
-        <div class="row">
-            <div>
-                {% if site.infobox.titel1 %}
-                <h3>{% if site.infobox.icon1 %}<svg class="icon icon-{{ site.infobox.icon1 }}"><use xlink:href="#icon-{{ site.infobox.icon1 }}"></use></svg>{% endif %}{{ site.infobox.titel1 }}</h3>
-                <p>{{ site.infobox.text1 }}</p>
-                {% endif %}
-                {% if site.infobox.titel2 %}
-                    <h3>{% if site.infobox.icon2 %}<svg class="icon icon-{{ site.infobox.icon2 }}"><use xlink:href="#icon-{{ site.infobox.icon2 }}"></use></svg>{% endif %}{{ site.infobox.titel2 }}</h3>
-                    <p>{{ site.infobox.text2 }}</p>
-                {% endif %}
-                {% if site.infobox.titel3 %}
-                    <h3>{% if site.infobox.icon3 %}<svg class="icon icon-{{ site.infobox.icon3 }}"><use xlink:href="#icon-{{ site.infobox.icon3 }}"></use></svg>{% endif %}{{ site.infobox.titel3 }}</h3>
-                    <p>{{ site.infobox.text3 }}</p>
-                {% endif %}
+<!-- Aktuelle Infos -->
+{% if site.infobox.titel1 or site.infobox.text1 or site.infobox.titel2 or site.infobox.text2 or site.infobox.titel3 or site.infobox.text3 %}
+    <div id="news" class="about">
+        <div class="container-fluid">
+            <h2 class="section-title">Aktuelle Informationen</h2>
+            <div class="row">
+                <div class="infobox">
+                    {% if site.infobox.titel1 %}
+                        <h3>{% if site.infobox.icon1 %}<svg class="icon icon-{{ site.infobox.icon1 }}"><use xlink:href="#icon-{{ site.infobox.icon1 }}"></use></svg> {% endif %}{{ site.infobox.titel1 }}</h3>
+                    {% endif %}
+                    {% if site.infobox.text1 %}
+                        <p>{{ site.infobox.text1 }}</p>
+                    {% endif %}
+                    {% if site.infobox.titel2 %}
+                        <h3>{% if site.infobox.icon2 %}<svg class="icon icon-{{ site.infobox.icon2 }}"><use xlink:href="#icon-{{ site.infobox.icon2 }}"></use></svg> {% endif %}{{ site.infobox.titel2 }}</h3>
+                    {% endif %}
+                    {% if site.infobox.text2 %}
+                        <p>{{ site.infobox.text2 }}</p>
+                    {% endif %}
+                    {% if site.infobox.titel3 %}
+                        <h3>{% if site.infobox.icon3 %}<svg class="icon icon-{{ site.infobox.icon3 }}"><use xlink:href="#icon-{{ site.infobox.icon3 }}"></use></svg> {% endif %}{{ site.infobox.titel3 }}</h3>
+                    {% endif %}
+                    {% if site.infobox.text1 %}
+                        <p>{{ site.infobox.text3 }}</p>
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>
-</div>
-        <!-- End Aktuelles -->
+{% endif %}
+
+<!-- End Aktuelle Infos -->
 
 <!-- Start About -->
 <div id="about" class="about">
@@ -159,45 +168,25 @@ layout: default
     <div id="team-carousel">
     {% for member in site.data.team %}
         <div class="expandable-box">
-            <div class="expandable-box-top">
-                <img src="{{ site.baseurl }}/img/{{ member.image }}" alt="{{ member.name }}">
-                <h4>{{ member.name }}</h4>
-            </div>
-            <div class="expandable-box-bottom">
-                <a href="mailto:{{ member.email }}" data-toggle="tooltip" data-placement="bottom" title="{{ member.email }}"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
-                </a>
-                <a href="tel:{{ member.phone }}" data-toggle="tooltip" data-placement="bottom" title="{{ member.phone }}"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></a>
-                </a>
-            </div>
+                <img src="{{ site.baseurl }}/img/{{ member.image }}" alt="{{ member.name }}" class="teamimg">
+                <h3 style="color: white;">{{ member.name }}</h3>
+                    {% if member.description1 %}
+                        <p>{{ member.description1 }}</p>
+                    {% endif %}
+                    {% if member.description2 %}
+                        <p>{{ member.description2 }}</p>
+                    {% endif %}
+                    {% if member.description3 %}
+                        <p>{{ member.description3 }}</p>
+                    {% endif %}
+                    {% if member.description4 %}
+                        <p>{{ member.description4 }}</p>
+                    {% endif %}
         </div>
     {% endfor %}
     </div>
 </div>
 <!-- End Our team -->
-
-<!-- Start Testimonials
-<div id="testimonials" class="testimonials parallax" style="background-image: url('{{ site.baseurl }}/img/{{ site.testimonials.testimonials_img }}');">
-    <div class="overlay-container">
-        <div class="overlay"></div>
-        <div class="container-fluid">
-            <div id="testimonial-carousel">
-                {% for testimonial in site.data.testimonials %}
-                    <div class="testimonial-item">
-                        <svg class="icon icon-quote-left"><use xlink:href="#icon-quote-left"></use></svg>
-                        <blockquote>
-                            <p>{{ testimonial.description }}</p>
-                            <footer>
-                                {{ testimonial.name }}
-                                <small>{{ testimonial.title }}</small>
-                            </footer>
-                        </blockquote>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</div>
-End Testimonials -->
 
 <!-- Start Gallery -->
 <div id="praxis" class="gallery">

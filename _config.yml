@@ -13,7 +13,7 @@ hero:
 
 # Infobox
 infobox:
-    titel1: Aktuelle Informationen
+    titel1: Corona, Corona #Aktuelle Informationen
     text1: Corona, Abweichende Öffnungszeiten, etc. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus!
     icon1: bolt
     titel2: Jetzt geht's ab in den Urlaub
@@ -41,9 +41,6 @@ wednesday: 7:30 - 13:00
 thursday: 7:30 - 12:00 | 16:00 - 18:00
 friday: 7:30 - 12:00
 
-# Testimonials
-testimonials:
-    testimonials_img: parallax.jpg
 
 # Social settings
 # facebook: http://facebook.com
@@ -54,7 +51,7 @@ testimonials:
 # feed: yes
 
 # Footer
-copyright: Impressum | Datenschutz | Cookie-Richtlinie
+# copyright: 
 
 # Build settings
 markdown: kramdown
