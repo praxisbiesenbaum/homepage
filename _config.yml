@@ -7,7 +7,7 @@ logo_url: svg/logo.svg
 
 # Hero
 hero: 
-    hero_img: hero.jpg
+    hero_img: team.jpg #hero.jpg
     hero_title: Dr. med. Jens Biesenbaum<br>Dr. med. Uwe Gerbaulet
     hero_description: Ihre Hausärzte in Löhne, Gohfeld, Obernbeck, Ulenburg, Mennighüffen, Depenbrock, Krell, Werste, Bad Oeyenhausen und Umland.
 
