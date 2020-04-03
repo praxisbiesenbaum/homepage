@@ -1,6 +1,6 @@
 # Site settings
 title: Hausarzt in Löhne - Praxis Dr. Biesenbaum & Dr. Gerbaulet
-description: "Hausarzt für Allgemeinmedizin in Löhne (OWL). Gemeinschaftspraxis Dr. Jens Biesenbaum und Dr. Uwe Gerbaulet"
+description: "Hausarzt für Allgemeinmedizin in Löhne, Ostwestfalen. Gemeinschaftspraxis Dr. med. Jens Biesenbaum und Dr. med. Uwe Gerbaulet. Fachärzte für Allgemeinmedizin, Palliativmedizin und Reisemedizin. Zusatzqualifikationen Naturheilkunde und Traditionelle Chinesische Medizin (TCM)." 
 baseurl: /homepage # the subpath of your site, e.g. /blog
 url: "" # the name of your domain
 logo_url: svg/logo.svg
@@ -9,20 +9,19 @@ logo_url: svg/logo.svg
 hero: 
     hero_img: hero.jpg
     hero_title: Dr. med. Jens Biesenbaum<br>Dr. med. Uwe Gerbaulet
-    hero_description: Gemeinschaftspraxis für Allgemeinmedizin in Löhne (Ostwestfalen)
+    hero_description: Ihre Hausärzte in Löhne, Gohfeld, Obernbeck, Ulenburg, Mennighüffen, Depenbrock, Krell, Werste, Bad Oeyenhausen und Umland.
 
 # Infobox
 infobox:
-    titel1: Corona, Corona #Aktuelle Informationen
-    text1: Corona, Abweichende Öffnungszeiten, etc. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus!
+    titel1: Corona, Corona
+    text1: Corona, Hände Waschen, Erst Anrufen, Draußenbleiben, etc. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus!
     icon1: bolt
     titel2: Jetzt geht's ab in den Urlaub
     text2: Vom 1. bis 31. sind wir leider nicht in der Praxis, sondern im Urlaub. Yippieyayeah!
     icon2: ambulance
     titel3: Urlaubsvertretung
-    text3: Dr. Peppa Pig
+    text3: Dr. Pepper
     icon3: calendar
-
 
 # Contact info
 contact:
